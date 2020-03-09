@@ -12,6 +12,9 @@ const SecondPage = {
             })
             .then(function(result) {
                 SecondPage.Users = result.data;
+            })
+            .catch(function(error) {
+                console.log(error);
             });
     },
     oninit: function() {
