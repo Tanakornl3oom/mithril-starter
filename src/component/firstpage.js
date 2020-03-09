@@ -13,7 +13,12 @@ const FirstPage = {
     view: function() {
         return [
             m('div', m(Nav)),
-            m('div', 'Hello first Page : state -> ' + this.state)
+            m('div', 'Hello first Page : state -> ' + this.state),
+            m(
+                m.route.Link,
+                { href: '/user', message: '123' },
+                'User with message'
+            )
         ];
     }
 };
